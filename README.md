@@ -13,3 +13,5 @@ This project is about programming a function that allows you to read content lin
 + You will compile your code as follows (a buffer size of 42 is used as an example): cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 <files>.c
 + We consider that get_next_line() has an undefined behavior if the file pointed to by the file descriptor changed since the last call whereas read() didn’t reach the end of file.
 + We also consider that get_next_line() has an undefined behavior when reading a binary file. However, you can implement a logical way to handle this behavior if you want to.
+## My Result
+![5AD76DC8-E6BA-4597-B113-3365A9A9947A_4_5005_c](https://github.com/Lucabhm/Get_Next_Line/assets/144374574/5392f592-5d8f-4c00-8fa9-a36e88a38b05)
