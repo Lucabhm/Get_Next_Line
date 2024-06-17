@@ -1,5 +1,5 @@
-NAME = get_next_line.a
-NAMEB = get_next_line_bonus.a
+NAME = lib_get_next_line.a
+NAMEB = lib_get_next_line_bonus.a
 CFLAGS = -Wall -Wextra -Werror
 
 SRC = get_next_line.c \
