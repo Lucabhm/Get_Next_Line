@@ -6,7 +6,7 @@
 /*   By: lbohm <lbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 17:06:13 by lbohm             #+#    #+#             */
-/*   Updated: 2023/11/08 17:42:40 by lbohm            ###   ########.fr       */
+/*   Updated: 2024/07/31 15:26:29 by lbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*strjoin(char *newline, char *buffer);
 char	*clean_buffer(char *buffer);
 char	*next_line(char *buffer);
 char	*ft_strchr(const char *word, int letter);
-size_t	ft_strlen(const char *str);
+size_t	ft_len(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 char	*freeup(char *buffer);
 

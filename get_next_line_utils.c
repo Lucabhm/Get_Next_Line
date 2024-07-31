@@ -6,7 +6,7 @@
 /*   By: lbohm <lbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:30:10 by lbohm             #+#    #+#             */
-/*   Updated: 2023/11/08 17:42:57 by lbohm            ###   ########.fr       */
+/*   Updated: 2024/07/31 15:26:15 by lbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strchr(const char *word, int letter)
 	return ((char *)(word + i));
 }
 
-size_t	ft_strlen(const char *str)
+size_t	ft_len(const char *str)
 {
 	int	i;
 
@@ -46,7 +46,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	int		len;
 
 	i = 0;
-	len = ft_strlen(src);
+	len = ft_len(src);
 	if (size == 0)
 		return (len);
 	while ((size - 1) > i && src[i] != '\0')

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucabohn <lucabohn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lbohm <lbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 16:35:26 by lbohm             #+#    #+#             */
-/*   Updated: 2023/12/08 21:10:06 by lucabohn         ###   ########.fr       */
+/*   Updated: 2024/07/31 15:26:21 by lbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char	*strjoin(char *buffer, char *newline)
 	}
 	if (!(buffer) || !(newline))
 		return (NULL);
-	str = malloc((ft_strlen(buffer) + ft_strlen(newline) + 1) * sizeof(char));
+	str = malloc((ft_len(buffer) + ft_len(newline) + 1) * sizeof(char));
 	if (!(str))
 		return (freeup(buffer));
 	i = -1;
@@ -127,7 +127,7 @@ char	*next_line(char *buffer)
 		i++;
 	if (!(buffer[i]) || !(buffer[i + 1]))
 		return (freeup(buffer));
-	nextline = (char *)malloc ((ft_strlen(buffer) - i + 1) * sizeof(char));
+	nextline = (char *)malloc ((ft_len(buffer) - i + 1) * sizeof(char));
 	if (!(nextline))
 		return (freeup(buffer));
 	i++;

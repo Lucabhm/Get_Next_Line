@@ -6,7 +6,7 @@
 /*   By: lbohm <lbohm@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:29:57 by lbohm             #+#    #+#             */
-/*   Updated: 2023/11/09 10:28:17 by lbohm            ###   ########.fr       */
+/*   Updated: 2024/07/31 15:25:57 by lbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char	*strjoin(char *buffer, char *newline)
 	}
 	if (!(buffer) || !(newline))
 		return (NULL);
-	str = malloc((ft_strlen(buffer) + ft_strlen(newline) + 1) * sizeof(char));
+	str = malloc((ft_len(buffer) + ft_len(newline) + 1) * sizeof(char));
 	if (!(str))
 		return (freeup(buffer));
 	i = -1;
@@ -127,7 +127,7 @@ char	*next_line(char *buffer)
 		i++;
 	if (!(buffer[i]) || !(buffer[i + 1]))
 		return (freeup(buffer));
-	nextline = (char *)malloc ((ft_strlen(buffer) - i + 1) * sizeof(char));
+	nextline = (char *)malloc ((ft_len(buffer) - i + 1) * sizeof(char));
 	if (!(nextline))
 		return (freeup(buffer));
 	i++;
