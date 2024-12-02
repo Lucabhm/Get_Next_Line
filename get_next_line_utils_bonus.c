@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbohm <lbohm@student.42.fr>                +#+  +:+       +#+        */
+/*   By: lbohm <lbohm@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 16:16:20 by lbohm             #+#    #+#             */
-/*   Updated: 2024/07/31 15:26:05 by lbohm            ###   ########.fr       */
+/*   Updated: 2024/09/11 15:42:23 by lbohm            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ size_t	ft_len(const char *str)
 	return (i);
 }
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlc(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 	int		len;
